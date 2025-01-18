@@ -22,7 +22,8 @@ st.dataframe(df)
 
 
 st.write(""" 
-            ## Closing Price
+            ## Daily Closing Price
 """)
 
-st.line_chart(df['Close'])
+st.line_chart(df['Close'],color='#FF0000')
+
