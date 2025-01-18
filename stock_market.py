@@ -10,7 +10,7 @@ st.write(""" Welcome to My Stock Market Analysis App! """)
 
 
 start_date = st.date_input("Start Date", datetime.date(2000, 1, 1))
-end_date = st.date_input("End Date", datetime.date(2100, 12, 31))
+end_date = st.date_input("End Date", datetime.date.today())
 
 ticker_list = ['AAPL', 'GOOGL', 'MSFT', 'AMZN', 'TSLA']
 ticker = st.selectbox("Choose the Ticker Symbol", ticker_list)
